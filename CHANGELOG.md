@@ -2,6 +2,7 @@
 
 ## UNRELEASED
 
+- **Fix: write the debug and diagnostics logs into pi's agent dir** — Resolve both through `getAgentDir()` so `PI_CODING_AGENT_DIR` is honoured instead of a hardcoded `~/.pi/agent`, which recreated that directory for layouts that move pi's config. `CLAUDE_BRIDGE_DEBUG_PATH` still overrides the debug log.
 - **Bump: Claude Sonnet 5.5** — Should appear in `/model` with 1M context once pi-ai ships the new catalog entry. Agent SDK bumped to ^0.3.284 (Claude Code 2.1.284).
 
 ## 0.9.0 — 2026-09-27
